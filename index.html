@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Biblioteca de Movimentos na Página: ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Usar DEFER para esperar a página carregar por completo -->
+    <script src="./scrollreveal.js" defer></script>
+    <title>Parallax - Busca de Apartamentos</title>
+</head>
+<body>
+    <div class="wrapper">
+        <main>
+<!-- *********************************************************************************** -->
+<!-- * 00 MENU -->
+            <div class="faixa-topo">
+                <div class="box-btn">
+                    <!-- Botão Relatório -->
+                    <button><a href="#planilha" class="btn">Relatório</a></button>
+
+                    <!-- Bairro Alto da Lapa -->
+                    <div class="menu-item">
+                        <button class="menu-btn">Alto da Lapa</button>
+                        <div class="submenu">
+                            <a href="#apto01">Apto 01</a>
+                            <a href="#apto02">Apto 02</a>
+                        </div>
+                    </div>
+
+                    <!-- Bairro Sumarezinho -->
+                    <div class="menu-item">
+                        <button class="menu-btn">Sumarezinho</button>
+                        <div class="submenu">
+                            <a href="#apto03">Apto 03</a>
+                            <a href="#apto04">Apto 04</a>
+                            <a href="#apto05">Apto 05</a>
+                            <a href="#apto06">Apto 06</a>
+                        </div>
+                    </div>
+
+                    <!-- Bairro Lapa -->
+                    <div class="menu-item">
+                        <button class="menu-btn">Lapa</button>
+                        <div class="submenu">
+                            <a href="#apto07">Apto 07</a>
+                            <a href="#apto08">Apto 08</a>
+                            <a href="#apto09">Apto 09</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- *********************************************************************************** -->
+<!-- * 01 PESQUISA -->
+            <section class="module parallax parallax-sp">
+                <div class="box-text reveal-left delay-200">
+                    <h1> Pesquisa: </h1>
+                    <h1> Studios e </h1>
+                    <h1> Apartamentos 1 Dorm</h1>
+                    <h1> em SP </h1>
+                </div>
+            </section>
+            <!-- Texto 01 -->
+            <section class="module content consideracoes">
+                <div class="container parametros-gerais">
+                    <h2>Parâmetros Gerais</h2>
+                    <div class="box-colunas">
+                        <div class="coluna-1 delay-200">
+                            <p>sem linha de crédito (desempregada e sem fgts) </p>
+                            <p>1- Documento de Doação para Alexandre </p>
+                        </div>
+                        <div class="coluna-2 delay-300">
+                            <p>2- Não dá pra comprar a Financiado </p>
+                            <p>3- Negociar pagamento a vista com Desconto</p>
+                            <p>4-Tabela com Preços Gerais</p>
+                            <p>5-Abas Individuais</p>
+                        </div>
+                        <div class="coluna-3 delay-400">
+                            <p>6-Dá pra fazer tipo um menu??? que leve direto ao Parallax específico?</p>
+                            <p>7-Ítens importantes para Morar em SP</p>
+                            <p>Análise de Valorização do Imóvel Ano/Perfil</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!-- *********************************************************************************** -->
+<!-- * 02 PLANILHA -->
+            <!-- Imagem 02 -->
+            <section class="module parallax parallax-planilha">
+                <div class="box-text reveal-left delay-200">
+                    <h1> Planilha: </h1>
+                    <h1> Estatísticas Gerais </h1>
+                </div>
+            </section>
+            <!-- Texto 02 -->
+            <section class="module content analises">
+                <div class="container" id="planilha">
+                    <h2>Tabela com Principais calculos</h2>
+                    <table>
+<!-- ***CABEÇALHO DA TABELA************************************* -->
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Endereço</th>
+                                <th>Área (m²)</th>
+                                <th>Tipo</th>
+                                <th>Andar</th>
+                                <th>Posição</th>
+                                <th>Cond</th>
+                                <th>IPTU mês</th>
+                                <th>Valor Locação</th>
+                                <th>Valor Venda</th>
+                                <th>Valor m²</th>
+                                <th>Prop 5% Desc</th>
+                                <th>Prop 8% Desc</th>
+                                <th>Prop 10% Desc</th>
+                                <th>Prop 15% Desc</th>
+                                <th>Idade</th>
+                                <!-- <th>Quartos</th> -->
+                                <th>Mobilia</th>
+                                <th>Obs.</th>
+                            </tr>
+                        </thead>
+<!-- ***CORPO DA TABELA*************************************** -->
+                        <tbody>
+                            <tr>
+                                <td>Apto 01</td>
+                                <td>Rua Camburiú, 177</td>
+                                <td>25</td>
+                                <td>1 Dorm</td>
+                                <td>Térreo</td>
+                                <td>Sol Manhã</td>
+                                <td>R$ 450</td>
+                                <td>R$ 150</td>
+                                <td>R$ 2.500</td>
+                                <td class="valor-venda">R$ 315.000</td>
+                                <td class="valor-metro">R$ 12.600</td>
+                                <td>R$ 299.250</td>
+                                <td>R$ 289.800</td>
+                                <td>R$ 283.500</td>
+                                <td>R$ 267.750</td>
+                                <td>1 ano</td>
+                                <!-- <td>2</td> -->
+                                <td>Com Mobilia</td>
+                                <td>Alugado</td>
+                            </tr>
+<!-- ******************************************************* -->
+                            <tr>
+                                <td>Apto 02</td>
+                                <td>Rua Camburiú, 177</td>
+                                <td>25</td>
+                                <td>1 Dorm</td>
+                                <td>Subsolo</td>
+                                <td>Sol Subsolo</td>
+                                <td>R$ 330</td>
+                                <td>R$ 67</td>
+                                <td>R$ - </td>
+                                <td class="valor-venda">R$ 310.000</td>
+                                <td class="valor-metro">R$ 12.400</td>
+                                <td>R$ 294.500</td>
+                                <td>R$ 285.200</td>
+                                <td>R$ 279.000</td>
+                                <td>R$ 263.500</td>
+                                <td>2 anos</td>
+                                <!-- <td>2</td> -->
+                                <td>Sem Mobilia</td>
+                                <td>Abaixo da Rua/Lazer</td>
+                            </tr>
+<!-- ******************************************************* -->
+                            <tr>
+                                <td>Apto 03</td>
+                                <td>Rua Heitor Penteado, 2122 </td>
+                                <td>28</td>
+                                <td>1 Dorm</td>
+                                <td>3° And</td>
+                                <td>Sol ?</td>
+                                <td>R$ 481</td>
+                                <td>R$ 125 </td>
+                                <td>R$ - </td>
+                                <td class="valor-venda">R$ 340.000</td>
+                                <td class="valor-metro">R$ 12.143</td>
+                                <td>R$ 323.000</td>
+                                <td>R$ 313.000</td>
+                                <td>R$ 306.000</td>
+                                <td>R$ 289.000</td>
+                                <td>20 anos</td>
+                                <!-- <td>3</td> -->
+                                <td>Sem Mobilia</td>
+                                <td>Varanda Q P/Lazer</td>
+                            </tr>
+<!-- ******************************************************* -->
+                            <tr>
+                                <td>Apto 04</td>
+                                <td>Rua Heitor Penteado, 2122 </td>
+                                <td>27</td>
+                                <td>1 Dorm</td>
+                                <td>3° And</td>
+                                <td>Sol ?</td>
+                                <td>R$ 380?</td>
+                                <td>R$ 80? </td>
+                                <td>R$ - </td>
+                                <td class="valor-venda">R$ 320.000</td>
+                                <td class="valor-metro">R$ 11.850</td>
+                                <td>R$ xxx.250</td>
+                                <td>R$ xxx.000</td>
+                                <td>R$ xxx.500</td>
+                                <td>R$ xxx.750</td>
+                                <td>20 anos</td>
+                                <!-- <td>3</td> -->
+                                <td>Sem Mobilia</td>
+                                <td>Varanda P/Lazer</td>
+                            </tr>
+<!-- ******************************************************* -->
+                            <tr>
+                                <td>Apto 05</td>
+                                <td>Rua Heitor Penteado, 2009 </td>
+                                <td>40</td>
+                                <td>1 Dorm</td>
+                                <td>Subsolo</td>
+                                <td>Sol ?</td>
+                                <td>R$ 640</td>
+                                <td>R$ 80? </td>
+                                <td>R$ - </td>
+                                <td class="valor-venda">R$ 280.000</td>
+                                <td class="valor-metro">R$ 7.000</td>
+                                <td>R$ xxx.250</td>
+                                <td>R$ xxx.000</td>
+                                <td>R$ xxx.500</td>
+                                <td>R$ xxx.750</td>
+                                <td>55 anos</td>
+                                <!-- <td>3</td> -->
+                                <td>Sem Mobilia</td>
+                                <td>SEM Varanda/Lazer</td>
+                            </tr>
+<!-- ******************************************************* -->
+                            <tr>
+                                <td>Apto 06</td>
+                                <td>Rua Heitor Penteado, 2009 </td>
+                                <td>41</td>
+                                <td>1 Dorm</td>
+                                <td>Subsolo</td>
+                                <td>Sol ?</td>
+                                <td>R$ 644</td>
+                                <td>R$ 62 </td>
+                                <td>R$ - </td>
+                                <td class="valor-venda">R$ 290.000</td>
+                                <td class="valor-metro">R$ 7.073</td>
+                                <td>R$ xxx.250</td>
+                                <td>R$ xxx.000</td>
+                                <td>R$ xxx.500</td>
+                                <td>R$ xxx.750</td>
+                                <td>55 anos</td>
+                                <!-- <td>3</td> -->
+                                <td>Sem Mobilia</td>
+                                <td>SEM Varanda/Lazer</td>
+                            </tr>
+<!-- ******************************************************* -->
+                            <tr>
+                                <td>Apto 07</td>
+                                <td>Rua Guaicurus, 827 407</td>
+                                <td>31</td>
+                                <td>1 Dorm</td>
+                                <td>4° And</td>
+                                <td>Sol Manhã</td>
+                                <td>R$ 380</td>
+                                <td>R$ 80 </td>
+                                <td>R$ - </td>
+                                <td class="valor-venda">R$ 285.000</td>
+                                <td class="valor-metro">R$ 9.194</td>
+                                <td>R$ 270.750</td>
+                                <td>R$ 262.200</td>
+                                <td>R$ 256.500</td>
+                                <td>R$ 242.250</td>
+                                <td>2 anos</td>
+                                <!-- <td>3</td> -->
+                                <td>Sem Mobilia</td>
+                                <td>Varanda Grande/Lazer</td>
+                            </tr>
+<!-- ******************************************************* -->
+                            <tr>
+                                <td>Apto 08</td>
+                                <td>Rua Guaicurus, 827 207</td>
+                                <td>31</td>
+                                <td>1 Dorm</td>
+                                <td>2° And</td>
+                                <td>Sol Manhã</td>
+                                <td>R$ 380</td>
+                                <td>R$ 80 </td>
+                                <td>R$ - </td>
+                                <td class="valor-venda">R$ 275.000</td>
+                                <td class="valor-metro">R$ 8.871</td>
+                                <td>R$ 261.250</td>
+                                <td>R$ 253.000</td>
+                                <td>R$ 247.500</td>
+                                <td>R$ 233.750</td>
+                                <td>2 anos</td>
+                                <!-- <td>3</td> -->
+                                <td>Sem Mobilia</td>
+                                <td>Varanda Grande/Lazer</td>
+                            </tr>
+<!-- ******************************************************* -->
+                            <tr>
+                                <td>Apto 09</td>
+                                <td>Rua Catão, xxx</td>
+                                <td>51</td>
+                                <td>1 Dorm</td>
+                                <td>?° And</td>
+                                <td>Sol ?</td>
+                                <td>R$ 475</td>
+                                <td>R$ 42 </td>
+                                <td>R$ - </td>
+                                <td class="valor-venda">R$ 300.000</td>
+                                <td class="valor-metro">R$ 5.882</td>
+                                <td>R$ xxx.250</td>
+                                <td>R$ xxx.000</td>
+                                <td>R$ xxx.500</td>
+                                <td>R$ xxx.750</td>
+                                <td>55 anos</td>
+                                <!-- <td>3</td> -->
+                                <td>Sem Mobilia</td>
+                                <td>Escuro/SEM Lazer</td>
+                            </tr>
+<!-- ******************************************************* -->
+                        </tbody>
+                    </table>                    
+                </div>
+            </section>
+<!-- *********************************************************************************** -->
+<!-- * 03 ANALISE DO BAIRRO - ALTO DA LAPA -->
+            <!-- Imagem 03 -->
+            <section class="module parallax parallax-alto">
+                <div class="box-text reveal-left delay-200">
+                    <h1>Análise do Bairro:</h1>
+                    <h1>Alto da Lapa</h1>
+                    <h2>[Rua Camburiú]</h2>
+                </div>
+            </section>
+            <!-- Texto 02 -->
+            <section class="module content bairro">
+                <div class="container pros">
+                    <h2>Prós</h2>
+                    <p>1- O que tem no apto</p>
+                    <p>2-Andar - Térreo com 3 Subsolo</p>
+                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
+                    <p>4-Varanda - Pequena</p>
+                    <p>5-Vista Interrompida</p>
+                    <p>6-Iluminação - Natural</p>
+                    <p>x-Sol da manhã até 13h</p>
+                    <p>7-pANORAMA Localização: Natureza/Bairro</p>
+                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
+                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                </div>
+                <div class="container contras">
+                    <h2>Contras</h2>
+                    <p>1- Pequeno</p>
+                    <p>2-</p>
+                    <p>3-</p>
+                    <p>4-</p>
+                    <p>5-</p>
+                    <p>6-</p>
+                </div>
+            </section>
+<!-- *********************************************************************************** -->
+<!-- * 04 APARTAMENTO - 01 -->
+            <!-- Imagem 04 -->
+            <section class="module parallax parallax-apto01" id="apto01">
+                <div class="box-text reveal-left delay-200">
+                    <h1>Apto 01</h1>
+                    <h2>Rua Camburiú 177</h2>
+                </div>
+                <div class="box-subtext dados-apto reveal-left delay-500">
+                    <!-- Fazer um bg Esfumaçado -->
+                    <h3> R$315k 25m² Térreo </h3>
+                    <p>Link Imagens: </p>
+                </div>
+            </section>
+            <!-- Texto 02 -->
+            <section class="module content unidade">
+                <div class="container pros">
+                    <h2>Prós</h2>
+                    <p>1- O que tem no apto</p>
+                    <p>2-Andar - Térreo com 3 Subsolo</p>
+                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
+                    <p>4-Varanda - Pequena</p>
+                    <p>5-Vista Interrompida</p>
+                    <p>6-Iluminação - Natural</p>
+                    <p>x-Sol da manhã até 13h</p>
+                    <p>7-Localização: Natureza/Bairro</p>
+                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
+                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                </div>
+                <div class="container contras">
+                    <h2>Contras</h2>
+                    <p>1- Pequeno</p>
+                    <p>2-</p>
+                    <p>3-</p>
+                    <p>4-</p>
+                    <p>5-</p>
+                    <p>6-</p>
+                </div>
+            </section>
+<!-- *********************************************************************************** -->
+<!-- * 05 APARTAMENTO - 02 -->
+            <!-- Imagem 04 -->
+            <section class="module parallax parallax-apto02" id="apto02">
+                <div class="box-text reveal-left delay-200">
+                    <h1>Apto 02</h1>
+                    <h2>Rua Camburiú 177</h2>
+                </div>
+                <div class="box-subtext dados-apto reveal-left delay-500">
+                    <!-- Fazer um bg Esfumaçado -->
+                    <h3> R$290k 25m² Subsolo </h3>
+                    <p>Link Imagens: </p>
+                </div>
+            </section>
+            <!-- Texto 02 -->
+            <section class="module content unidade">
+                <div class="container pros">
+                    <h2>Prós</h2>
+                    <p>1- O que tem no apto</p>
+                    <p>2-Andar - Térreo com 3 Subsolo</p>
+                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
+                    <p>4-Varanda - Pequena</p>
+                    <p>5-Vista Interrompida</p>
+                    <p>6-Iluminação - Natural</p>
+                    <p>x-Sol da manhã até 13h</p>
+                    <p>7-Localização: Natureza/Bairro</p>
+                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
+                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                </div>
+                <div class="container contras">
+                    <h2>Contras</h2>
+                    <p>1- Pequeno</p>
+                    <p>2-</p>
+                    <p>3-</p>
+                    <p>4-</p>
+                    <p>5-</p>
+                    <p>6-</p>
+                </div>
+            </section>
+<!-- *********************************************************************************** -->
+<!-- * 06 ANALISE DO BAIRRO - SUMAREZINHO -->
+<!-- Sumarezinho -->
+            <!-- Imagem 03 -->
+            <section class="module parallax parallax-alto">
+                <div class="box-text reveal-left delay-200">
+                    <h1>Análise do Bairro:</h1>
+                    <h1>Sumarezinho</h1>
+                    <h2>[Rua Heitor Penteado]</h2>
+                </div>
+            </section>
+            <!-- Texto 02 -->
+            <section class="module content bairro">
+                <div class="container pros">
+                    <h2>Prós</h2>
+                    <p>1- O que tem no apto</p>
+                    <p>2-Andar - Térreo com 3 Subsolo</p>
+                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
+                    <p>4-Varanda - Pequena</p>
+                    <p>5-Vista Interrompida</p>
+                    <p>6-Iluminação - Natural</p>
+                    <p>x-Sol da manhã até 13h</p>
+                    <p>7-pANORAMA Localização: Natureza/Bairro</p>
+                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
+                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                </div>
+                <div class="container contras">
+                    <h2>Contras</h2>
+                    <p>1- Pequeno</p>
+                    <p>2-</p>
+                    <p>3-</p>
+                    <p>4-</p>
+                    <p>5-</p>
+                    <p>6-</p>
+                </div>
+            </section>
+<!-- *********************************************************************************** -->
+<!-- * APARTAMENTO - 03 -->
+            <!-- Imagem 04 -->
+            <section class="module parallax parallax-apto01" id="apto03">
+                <div class="box-text reveal-left delay-200">
+                    <h1 id="apto01">Apto 03</h1>
+                    <h2>Rua Camburiú 177</h2>
+                </div>
+                <div class="box-subtext dados-apto reveal-left delay-500">
+                    <!-- Fazer um bg Esfumaçado -->
+                    <h3> R$315k 25m² Térreo </h3>
+                    <p>Link Imagens: </p>
+                </div>
+            </section>
+            <!-- Texto 02 -->
+            <section class="module content unidade">
+                <div class="container pros">
+                    <h2>Prós</h2>
+                    <p>1- O que tem no apto</p>
+                    <p>2-Andar - Térreo com 3 Subsolo</p>
+                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
+                    <p>4-Varanda - Pequena</p>
+                    <p>5-Vista Interrompida</p>
+                    <p>6-Iluminação - Natural</p>
+                    <p>x-Sol da manhã até 13h</p>
+                    <p>7-Localização: Natureza/Bairro</p>
+                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
+                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                </div>
+                <div class="container contras">
+                    <h2>Contras</h2>
+                    <p>1- Pequeno</p>
+                    <p>2-</p>
+                    <p>3-</p>
+                    <p>4-</p>
+                    <p>5-</p>
+                    <p>6-</p>
+                </div>
+            </section>
+<!-- *********************************************************************************** -->
+<!-- * APARTAMENTO - 04 -->
+            <!-- Imagem 04 -->
+            <section class="module parallax parallax-apto01" id="apto04">
+                <div class="box-text reveal-left delay-200">
+                    <h1 id="apto01">Apto 04</h1>
+                    <h2>Rua Camburiú 177</h2>
+                </div>
+                <div class="box-subtext dados-apto reveal-left delay-500">
+                    <!-- Fazer um bg Esfumaçado -->
+                    <h3> R$315k 25m² Térreo </h3>
+                    <p>Link Imagens: </p>
+                </div>
+            </section>
+            <!-- Texto 02 -->
+            <section class="module content unidade">
+                <div class="container pros">
+                    <h2>Prós</h2>
+                    <p>1- O que tem no apto</p>
+                    <p>2-Andar - Térreo com 3 Subsolo</p>
+                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
+                    <p>4-Varanda - Pequena</p>
+                    <p>5-Vista Interrompida</p>
+                    <p>6-Iluminação - Natural</p>
+                    <p>x-Sol da manhã até 13h</p>
+                    <p>7-Localização: Natureza/Bairro</p>
+                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
+                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                </div>
+                <div class="container contras">
+                    <h2>Contras</h2>
+                    <p>1- Pequeno</p>
+                    <p>2-</p>
+                    <p>3-</p>
+                    <p>4-</p>
+                    <p>5-</p>
+                    <p>6-</p>
+                </div>
+            </section>
+<!-- *********************************************************************************** -->
+<!-- * APARTAMENTO - 05 -->
+            <!-- Imagem 04 -->
+            <section class="module parallax parallax-apto01" id="apto05">
+                <div class="box-text reveal-left delay-200">
+                    <h1 id="apto01">Apto 05</h1>
+                    <h2>Rua Camburiú 177</h2>
+                </div>
+                <div class="box-subtext dados-apto reveal-left delay-500">
+                    <!-- Fazer um bg Esfumaçado -->
+                    <h3> R$315k 25m² Térreo </h3>
+                    <p>Link Imagens: </p>
+                </div>
+            </section>
+            <!-- Texto 02 -->
+            <section class="module content unidade">
+                <div class="container pros">
+                    <h2>Prós</h2>
+                    <p>1- O que tem no apto</p>
+                    <p>2-Andar - Térreo com 3 Subsolo</p>
+                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
+                    <p>4-Varanda - Pequena</p>
+                    <p>5-Vista Interrompida</p>
+                    <p>6-Iluminação - Natural</p>
+                    <p>x-Sol da manhã até 13h</p>
+                    <p>7-Localização: Natureza/Bairro</p>
+                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
+                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                </div>
+                <div class="container contras">
+                    <h2>Contras</h2>
+                    <p>1- Pequeno</p>
+                    <p>2-</p>
+                    <p>3-</p>
+                    <p>4-</p>
+                    <p>5-</p>
+                    <p>6-</p>
+                </div>
+            </section>
+<!-- *********************************************************************************** -->
+<!-- * APARTAMENTO - 06 -->
+            <!-- Imagem 04 -->
+            <section class="module parallax parallax-apto01" id="apto06">
+                <div class="box-text reveal-left delay-200">
+                    <h1 id="apto01">Apto 06</h1>
+                    <h2>Rua Camburiú 177</h2>
+                </div>
+                <div class="box-subtext dados-apto reveal-left delay-500">
+                    <!-- Fazer um bg Esfumaçado -->
+                    <h3> R$315k 25m² Térreo </h3>
+                    <p>Link Imagens: </p>
+                </div>
+            </section>
+            <!-- Texto 02 -->
+            <section class="module content unidade">
+                <div class="container pros">
+                    <h2>Prós</h2>
+                    <p>1- O que tem no apto</p>
+                    <p>2-Andar - Térreo com 3 Subsolo</p>
+                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
+                    <p>4-Varanda - Pequena</p>
+                    <p>5-Vista Interrompida</p>
+                    <p>6-Iluminação - Natural</p>
+                    <p>x-Sol da manhã até 13h</p>
+                    <p>7-Localização: Natureza/Bairro</p>
+                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
+                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                </div>
+                <div class="container contras">
+                    <h2>Contras</h2>
+                    <p>1- Pequeno</p>
+                    <p>2-</p>
+                    <p>3-</p>
+                    <p>4-</p>
+                    <p>5-</p>
+                    <p>6-</p>
+                </div>
+            </section>
+<!-- *********************************************************************************** -->
+<!-- * 00 ANALISE DO BAIRRO - CENTRO DA LAPA -->
+<!-- Lapa -->
+            <section class="module parallax parallax-alto">
+                <div class="box-text reveal-left delay-200">
+                    <h1>Análise do Bairro:</h1>
+                    <h1>Centro da Lapa</h1>
+                    <h2>[Rua Camburiú]</h2>
+                </div>
+            </section>
+            <!-- Texto 02 -->
+            <section class="module content bairro">
+                <div class="container pros">
+                    <h2>Prós</h2>
+                    <p>1- O que tem no apto</p>
+                    <p>2-Andar - Térreo com 3 Subsolo</p>
+                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
+                    <p>4-Varanda - Pequena</p>
+                    <p>5-Vista Interrompida</p>
+                    <p>6-Iluminação - Natural</p>
+                    <p>x-Sol da manhã até 13h</p>
+                    <p>7-pANORAMA Localização: Natureza/Bairro</p>
+                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
+                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                </div>
+                <div class="container contras">
+                    <h2>Contras</h2>
+                    <p>1- Pequeno</p>
+                    <p>2-</p>
+                    <p>3-</p>
+                    <p>4-</p>
+                    <p>5-</p>
+                    <p>6-</p>
+                </div>
+            </section>
+<!-- Imagem 04 -->
+<!-- *********************************************************************************** -->
+<!-- * APARTAMENTO - 07 -->
+            <section class="module parallax parallax-apto01" id="apto07">
+                <div class="box-text reveal-left delay-200">
+                    <h1>Apto 07</h1>
+                    <h2>Rua Camburiú 177</h2>
+                </div>
+                <div class="box-subtext dados-apto reveal-left delay-500">
+                    <!-- Fazer um bg Esfumaçado -->
+                    <h3> R$315k 25m² Térreo </h3>
+                    <p>Link Imagens: </p>
+                </div>
+            </section>
+            <!-- Texto 02 -->
+            <section class="module content unidade">
+                <div class="container pros">
+                    <h2>Prós</h2>
+                    <p>1- O que tem no apto</p>
+                    <p>2-Andar - Térreo com 3 Subsolo</p>
+                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
+                    <p>4-Varanda - Pequena</p>
+                    <p>5-Vista Interrompida</p>
+                    <p>6-Iluminação - Natural</p>
+                    <p>x-Sol da manhã até 13h</p>
+                    <p>7-Localização: Natureza/Bairro</p>
+                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
+                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                </div>
+                <div class="container contras">
+                    <h2>Contras</h2>
+                    <p>1- Pequeno</p>
+                    <p>2-</p>
+                    <p>3-</p>
+                    <p>4-</p>
+                    <p>5-</p>
+                    <p>6-</p>
+                </div>
+            </section>
+<!-- *********************************************************************************** -->
+<!-- * APARTAMENTO - 08 -->
+            <section class="module parallax parallax-apto01" id="apto08">
+                <div class="box-text reveal-left delay-200">
+                    <h1>Apto 08</h1>
+                    <h2>Rua Camburiú 177</h2>
+                </div>
+                <div class="box-subtext dados-apto reveal-left delay-500">
+                    <!-- Fazer um bg Esfumaçado -->
+                    <h3> R$315k 25m² Térreo </h3>
+                    <p>Link Imagens: </p>
+                </div>
+            </section>
+            <!-- Texto 02 -->
+            <section class="module content unidade">
+                <div class="container pros">
+                    <h2>Prós</h2>
+                    <p>1- O que tem no apto</p>
+                    <p>2-Andar - Térreo com 3 Subsolo</p>
+                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
+                    <p>4-Varanda - Pequena</p>
+                    <p>5-Vista Interrompida</p>
+                    <p>6-Iluminação - Natural</p>
+                    <p>x-Sol da manhã até 13h</p>
+                    <p>7-Localização: Natureza/Bairro</p>
+                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
+                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                </div>
+                <div class="container contras">
+                    <h2>Contras</h2>
+                    <p>1- Pequeno</p>
+                    <p>2-</p>
+                    <p>3-</p>
+                    <p>4-</p>
+                    <p>5-</p>
+                    <p>6-</p>
+                </div>
+            </section>
+<!-- *********************************************************************************** -->
+<!-- * APARTAMENTO - 09 -->
+            <section class="module parallax parallax-apto01" id="apto09">
+                <div class="box-text reveal-left delay-200">
+                    <h1>Apto 09</h1>
+                    <h2>Rua Camburiú 177</h2>
+                </div>
+                <div class="box-subtext dados-apto reveal-left delay-500">
+                    <!-- Fazer um bg Esfumaçado -->
+                    <h3> R$315k 25m² Térreo </h3>
+                    <p>Link Imagens: </p>
+                </div>
+            </section>
+            <!-- Texto 02 -->
+            <section class="module content unidade">
+                <div class="container pros">
+                    <h2>Prós</h2>
+                    <p>1- O que tem no apto</p>
+                    <p>2-Andar - Térreo com 3 Subsolo</p>
+                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
+                    <p>4-Varanda - Pequena</p>
+                    <p>5-Vista Interrompida</p>
+                    <p>6-Iluminação - Natural</p>
+                    <p>x-Sol da manhã até 13h</p>
+                    <p>7-Localização: Natureza/Bairro</p>
+                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
+                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                </div>
+                <div class="container contras">
+                    <h2>Contras</h2>
+                    <p>1- Pequeno</p>
+                    <p>2-</p>
+                    <p>3-</p>
+                    <p>4-</p>
+                    <p>5-</p>
+                    <p>6-</p>
+                </div>
+            </section>
+<!-- ******************************************************* -->
+        </main>
+    </div>
+<!-- *********************************************************************************** -->
+<!-- * 00 RODAPÉ -->
+    <footer>
+
+    </footer>
+    <script src="./menu.js"></script>
+</body>
+</html>
