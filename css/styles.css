@@ -57,7 +57,7 @@ body {
 }
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 20px; /* Ajuste conforme a altura do menu */
+    scroll-padding-top: 20px;
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
@@ -130,8 +130,8 @@ section.module.content {
     visibility: hidden;
     display: flex;
     justify-content: space-between;
-    gap: 30px;
-    padding: 15px 80px;
+    gap: 20px;
+    padding: 15px 20px;
 }
 /* *************************************** */
 /** Faixa fixa no topo - Botões Link */
@@ -141,27 +141,23 @@ section.module.content {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--bg-color-B-opac);
+    background-color: var(--bg-color-B);
     padding: 10px 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 /* Container dos botões: */
 .box-btn {
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin-top: 0;
-    background-color: transparent;
+    /* margin-top: 0; */
 }
-/*  */
 /* Estilo dos botões principais */
 .menu-item {
     position: relative;
     /* display: inline-block; */
-    display: flex; 
-    /* justify-content: space-between; */
-    /* min-width: 100px; */
+    /* display: flex;  */
+
 }
 .menu-btn {
     background-color: transparent;
@@ -174,6 +170,7 @@ section.module.content {
 }
 .menu-btn:hover {
     color: var(--text-color-B);
+    transform: scale(1.03);
 }
 /* Submenu (escondido por padrão) */
 .submenu {
@@ -181,24 +178,25 @@ section.module.content {
     position: absolute;
     top: 100%; /* Coloca o submenu abaixo do botão */
     left: 0;
-    width: auto;
-    white-space: nowrap;
+    /* width: auto; */
+    /* white-space: nowrap; */
     min-width: 200px;
     opacity: 0;
     visibility: hidden;
-    background-color: var(--bg-color-B-opac);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* background-color: var(--bg-color-B-opac); */
+    background-color: var(--bg-color-B);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
     border-radius: 0  0 5px 5px;
     transform: translateY(-10px);
-    transition: opacity 0.4s ease, transform 0.3s ease, visibility 0.3s ease;
-    z-index: 999;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
     /* pointer-events: none; */
 }
 /* Mostrar o submenu ao passar o mouse no menu-item */
-.menu-item:hover .submenu,
-.menu-item.active .submenu {
+/* .menu-item.active .submenu, */
+.menu-item:hover .submenu{
     /* display: block; */
     visibility: visible;
     opacity: 1;
@@ -210,31 +208,39 @@ section.module.content {
     display: block;
     color: var(--text-color-A);
     text-decoration: none;
-    font-size: 24px;
+    font-size: 22px;
     padding: 5px 10px;
 }
 .submenu a:hover {
     color: var(--text-color-B);
 }
-/* Mostrar o submenu quando o botão for clicado */
-/* .menu-item.active .submenu {
-    display: block;
-} */
-/* rever */
-.box-btn button {
+/* Estilo específico para botões com link */
+.menu-btn a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Removendo estilos conflitantes */
+.menu-item button {
+    /* all: unset; */
+    cursor: pointer;
+}
+/* .box-btn button {
     text-decoration: none;
     background-color: transparent;
     border: none;
-}
-.box-btn button a {
+} */
+/* .box-btn button a {
     text-decoration: none;
     color: var(--text-color-A);
     font-size: 30px;
     font-weight: 600;
-}
-.box-btn button a:hover {
+} */
+/* .box-btn button a:hover {
     color: var(--text-color-B);
-}
+} */
 /* *************************************** */
 /** Parâmetro Geral para Imagens do Parallax: */
 /* *************************************** */
@@ -346,42 +352,131 @@ section.module div.dados-apto {
 /** ESTILIZAÇÃO DA TABELA  */
 /* *************************************** */
 table {
-    width: 95%;
+    width: 100%;
+    min-width: 800px;
     border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    /* margin-bottom: 30px; */
     margin: 20px;
     align-items: center;
 }
+/* Celulas da tabela: */
 th, td {
     color: var(--text-color-A);
     border: 1px solid var(--text-color-C);
     padding: 8px;
     text-align: center;
     font-size: 12px;
+    /* Evita que o texto quebre dentro da célula: */
+    white-space: nowrap;
 }
 th {
     background-color: var(--bg-color-A);
     font-weight: bold;
 }
 tr:nth-child(even) {
-    background-color: var(--bg-color-A);
+    background-color: var(--bg-color-D);
 }
 tr:hover {
-    background-color: var(--bg-color-C);
+    background-color: var(--bg-color-A);
 }
-td.valor-venda,
-td.valor-metro {
+td.preco-venda,
+td.preco-metro {
     font-weight: 600;
 }
+th a,
+td a {
+    color: var(--text-color-A);
+    text-decoration: none;
+    transition: transform 0.3s ease, font-size 0.3s ease, text-decoration 0.3s ease;
+}
+th a:hover,
+td a:hover {
+    text-decoration: underline;
+    font-size: 1.1em;
+}
+/* Fixar a primeira coluna (ID) */
+th:first-child, td:first-child,
+th:nth-child(1), td:nth-child(1) {
+    position: sticky;
+    left: 0;
+    background: var(--bg-color-A);
+    border: 1px solid var(--text-color-C);
+    z-index: 3;
+}
 /* *************************************** */
-/** ESTILIZAÇÃO DOS MOVIMENTOS BIBLIOTECA SCROLLREVEAL  */
+/** ESTILIZAÇÃO DA BARRA DE ROLAGEM DA TABELA: */
+/* *************************************** */
+.table-container {
+    overflow-x: auto;
+    position: relative;
+    margin: 20px;
+    padding-left: 0px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+/* Barra quase invisível */
+.table-container::-webkit-scrollbar {
+    height: 7px;
+}
+/* Fundo da barra (transparente) */
+.table-container::-webkit-scrollbar-track {
+    /* background: transparent; */
+    background: var(--bg-color-C-opac);
+    border-radius: 2px;
+}
+/* Botão de arrasto fininho */
+.table-container::-webkit-scrollbar-thumb {
+    /* background: rgba(0, 0, 0, 0.2); */
+    background: var(--bg-color-A);
+    border-radius: 5px;
+}
+/* Hover */
+.table-container::-webkit-scrollbar-thumb:hover {
+    /* background: rgba(0, 0, 0, 0.5); */
+    background: var(--bg-color-D);
+}
+/* *************************************** */
+/** ESTILIZAÇÃO DOS MOVIMENTOS BIBLIOTECA SCROLLREVEAL:  */
 /* *************************************** */
 /* https://youtu.be/dN7FAswF2HQ?si=cTT26-Zm98NU9hHH */
-.reveal-left, .delay-200, .delay-500{
+.reveal-left,
+.delay-100,
+.delay-200,
+.delay-300,
+.delay-400,
+.delay-500 {
     /* Esconder a propriedade */
     visibility: hidden;
 }
 /* *************************************** */
+/** ESTILIZAÇÃO DO RODAPÉ:  */
+/* *************************************** */
+footer {
+    background-color: var(--bg-color-A);
+    color: var(--text-color-A);
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+/* *************************************** */
+/** ESTILIZAÇÃO RESPONSIVIDADE DE TELA:  */
+/* *************************************** */
+/* Responsividade: Ajuste para telas menores */
+@media (max-width: 768px) {
+    th, td {
+        padding: 4px;
+        font-size: 10px;
+    }
+    .table-container {
+        overflow-x: scroll;
+    }
+}
+/* *************************************** */
 /** ESTILIZAÇÃO DOS  */
 /* *************************************** */
+
+
+/* *************************************** */
+/** ESTILIZAÇÃO DOS  */
+/* *************************************** */
+
+/* Rascunhos: box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */

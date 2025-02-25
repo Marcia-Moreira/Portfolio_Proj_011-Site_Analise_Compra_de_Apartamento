@@ -1,0 +1,271 @@
+/** Projeto com Parallax: RESPONSIVIDADE DE TELAS*/
+
+/* *************************************** */
+/** ESTILIZAÇÃO RESPONSIVIDADE DE TELA PARA: TABLETS */
+/* *************************************** */
+/* Responsividade: Ajuste para telas menores */
+@media (max-width: 768px) {
+    /* *************************************** */
+    /** GERAL: */
+    /* *************************************** */
+    html {
+        scroll-padding-top: 15px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        letter-spacing: 1.1px;
+    }
+    .content {
+        padding: 0 15px;
+    }
+    section.module p {
+        margin-bottom: 15px;
+    }
+    section.module h2 {
+        margin-bottom: 25px;
+        margin-top: 15px;
+    }
+    .module.content.consideracoes,
+    .module.content.unidade,
+    .module.content.bairro {
+        gap: 10px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .module.content.consideracoes .container,
+    .module.content.unidade .container,
+    .module.content.bairro .container {
+        border-radius: 8px;
+        margin: 10px;
+        padding: 15px;
+    }
+    .container.parametros-gerais .box-colunas {
+        gap: 28px;
+        padding: 5px 15px;
+    }
+    .container.parametros-gerais .box-colunas {
+        font-size: 14px;
+    }
+    /* *************************************** */
+    /** MENU: */
+    /* *************************************** */
+    .faixa-topo {
+        padding: 8px 10px;
+    }
+    /* Container dos botões: */
+    .box-btn {
+        gap: 40px;
+    }
+    /* Estilo dos botões principais */
+    .menu-item {
+        position: relative;
+    }
+    .menu-btn {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .menu-btn:hover {
+        transform: scale(1.03);
+    }
+    /* Submenu (escondido por padrão) */
+    .submenu {
+        min-width: 150px;
+        padding: 8px;
+        margin-top: 5px;
+    }
+    .submenu a {
+        font-size: 16px;
+    }
+    /* *************************************** */
+    /** ESTILIZAÇÃO BACKGROUND TRANSPARENTE:  */
+    /* *************************************** */
+    section.module.parallax div.box-text {
+        padding: 10px;
+    }
+    section.module.parallax div.box-subtext {
+        padding: 10px;
+    }
+    /* *************************************** */
+    /** ESTILIZAÇÃO TEXTO DENTRO DO PARALLAX:  */
+    /* *************************************** */
+    /* Efeito Textos dentro do Paralax: */
+    section.module.parallax h1 {
+        font-size: 28px;
+    }
+    section.module.parallax h2 {
+        font-size: 22px;
+    }
+    section.module div.dados-apto {
+        padding-top: 20px;
+        padding-left: 20px;
+        gap: 15px;
+    }
+    /* *************************************** */
+    /** ESTILIZAÇÃO DA TABELA  */
+    /* *************************************** */
+    table {
+        margin: 10px;
+    }
+    /* Celulas da tabela: */
+    th, td {
+        padding: 8px;
+        font-size: 10px;
+    }
+    .table-container {
+        overflow-x: scroll;
+    }
+    /* *************************************** */
+    /** ESTILIZAÇÃO DA BARRA DE ROLAGEM DA TABELA: */
+    /* *************************************** */
+    .table-container {
+        margin: 10px;
+        border-radius: 8px 8px 0 0;
+    }
+    /* Barra quase invisível */
+    .table-container::-webkit-scrollbar {
+        height: 5px;
+    }
+    /* *************************************** */
+    /** FOOTER: */
+    /* *************************************** */
+    footer {
+        padding: 6px;
+        margin-top: 6px;
+        font-size: 12px;
+    }
+}
+
+/* *************************************** */
+/** ESTILIZAÇÃO RESPONSIVIDADE DE TELA PARA: CELULARES */
+/* *************************************** */
+@media (max-width: 480px) {
+    /* *************************************** */
+    /** GERAL: */
+    /* *************************************** */
+    html {
+        scroll-padding-top: 10px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    .content {
+        padding: 0 10px;
+    }
+    section.module p {
+        margin-bottom: 10px;
+    }
+    section.module h2 {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .module.content.consideracoes,
+    .module.content.unidade,
+    .module.content.bairro {
+        gap: 8px;
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    .module.content.consideracoes .container,
+    .module.content.unidade .container,
+    .module.content.bairro .container {
+        border-radius: 6px;
+        margin: 8px;
+        padding: 12px;
+    }
+    .container.parametros-gerais .box-colunas {
+        gap: 20px;
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    /* *************************************** */
+    /** MENU: */
+    /* *************************************** */
+    .faixa-topo {
+        padding: 6px 20px;
+    }
+    /* Container dos botões: */
+    .box-btn {
+        gap: 20px;
+    }
+    /* Estilo dos botões principais */
+    .menu-btn {
+        font-size: 14px;
+    }
+    .menu-btn:hover {
+        transform: scale(1.01);
+    }
+    /* Submenu */
+    .submenu {
+        min-width: 80px;
+        padding: 6px;
+        margin-top: 4px;
+    }
+    .submenu a {
+        font-size: 14px;
+    }
+    /* *************************************** */
+    /** ESTILIZAÇÃO BACKGROUND TRANSPARENTE:  */
+    /* *************************************** */
+    section.module.parallax div.box-text,
+    section.module.parallax div.box-subtext {
+        padding: 8px;
+    }
+    /* *************************************** */
+    /** ESTILIZAÇÃO TEXTO DENTRO DO PARALLAX:  */
+    /* *************************************** */
+    section.module.parallax h1 {
+        font-size: 24px;
+    }
+    section.module.parallax h2 {
+        font-size: 18px;
+    }
+    section.module div.dados-apto {
+        padding-top: 15px;
+        padding-left: 15px;
+        gap: 10px;
+    }
+    /* *************************************** */
+    /** ESTILIZAÇÃO DA TABELA  */
+    /* *************************************** */
+    table {
+        margin: 8px;
+    }
+    /* Células da tabela */
+    th, td {
+        padding: 6px;
+        font-size: 8px;
+    }
+    .table-container {
+        overflow-x: auto;
+        margin: 8px;
+        border-radius: 6px 6px 0 0;
+    }
+    /* *************************************** */
+    /** FOOTER: */
+    /* *************************************** */
+    footer {
+        padding: 5px;
+        margin-top: 5px;
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+/* *************************************** */
+/** ESTILIZAÇÃO DOS  */
+/* *************************************** */
+
+
+/* *************************************** */
+/** ESTILIZAÇÃO DOS  */
+/* *************************************** */
+
+
+/* *************************************** */
+
+/* *************************************** */
