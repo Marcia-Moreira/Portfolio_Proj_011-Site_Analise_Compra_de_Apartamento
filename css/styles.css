@@ -22,33 +22,6 @@
     --text-color-A: rgb(60, 90, 60);
     --text-color-B: rgb(152, 172, 144);
     --text-color-C: rgb(245, 240, 230);
-   
-    /* RASCUNHO: */
-    /* OPÇÕES PARA BACKGROUND: */
-    background-color: rgb(227, 209, 183);
-    background-color: rgb(245, 235, 220);
-    background-color: rgb(235, 215, 185);
-    background-color: rgb(210, 200, 190);
-    background-color: rgb(240, 220, 210);
-    background-color: rgb(200, 180, 150);
-    /* OPÇÕES PARA TEXTO: */
-    color: rgb(0, 0, 0);
-    color: rgb(50, 50, 50);
-    color: rgb(90, 60, 40);
-    color: rgb(120, 40, 60);
-    color: rgb(245, 240, 230);
-    color: rgb(190, 215, 180);
-    color: rgb(152, 172, 144);
-    color: rgb(120, 150, 100);
-    color: rgb(60, 90, 60);
-    /* TEXT ESCOLHIDOS: */
-    color: rgb(245, 240, 230);
-    color: rgb(152, 172, 144);
-    color: rgb(60, 90, 60);
-    /* BG ESCOLHIDOS: */
-    background-color: rgb(240, 220, 210);
-    background-color: rgb(235, 215, 185);
-    background-color: rgb(200, 180, 150);
 }
 body {
     background-color: var(--bg-color-B);
@@ -75,13 +48,11 @@ main {
 }
 .content {
     width: 100%;
-    /* max-width: 760px; */
     margin: 0 auto;
     padding: 0 20px;
 }
 section.module p {
     margin-bottom: 20px;
-    /* margin-bottom: 40px; */
 }
 /* Último parágrafo sem margin-bottom: */
 section.module:last-child {
@@ -150,14 +121,10 @@ section.module.content {
     display: flex;
     justify-content: center;
     gap: 50px;
-    /* margin-top: 0; */
 }
 /* Estilo dos botões principais */
 .menu-item {
     position: relative;
-    /* display: inline-block; */
-    /* display: flex;  */
-
 }
 .menu-btn {
     background-color: transparent;
@@ -192,7 +159,6 @@ section.module.content {
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
     z-index: 1000;
-    /* pointer-events: none; */
 }
 /* Mostrar o submenu ao passar o mouse no menu-item */
 /* .menu-item.active .submenu, */
@@ -201,8 +167,6 @@ section.module.content {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
-    /* transform: scale(1); */
-    /* pointer-events: auto; */
 }
 .submenu a {
     display: block;
@@ -227,20 +191,6 @@ section.module.content {
     /* all: unset; */
     cursor: pointer;
 }
-/* .box-btn button {
-    text-decoration: none;
-    background-color: transparent;
-    border: none;
-} */
-/* .box-btn button a {
-    text-decoration: none;
-    color: var(--text-color-A);
-    font-size: 30px;
-    font-weight: 600;
-} */
-/* .box-btn button a:hover {
-    color: var(--text-color-B);
-} */
 /* *************************************** */
 /** Parâmetro Geral para Imagens do Parallax: */
 /* *************************************** */
@@ -326,14 +276,11 @@ section.module.parallax div.box-subtext {
 /* *************************************** */
 /* Efeito Textos dentro do Paralax: */
 section.module.parallax h1 {
-    /* text-align: center; */
     text-align: left;
     font-size: 36px;
     z-index: 50;
-    /* text-transform: uppercase;     */
 }
 section.module.parallax h2 {
-    /* text-align: center; */
     text-align: left;
     font-size: 28px;
     z-index: 50;
@@ -342,11 +289,18 @@ section.module div.dados-apto {
     padding-top: 30px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
     padding-left: 30px;
     gap: 20px;
     z-index: 51;
+}
+.link-copia {
+    color: var(--text-color-A);
+    text-decoration: none;
+    transition: transform 0.3s ease, font-size 0.3s ease, text-decoration 0.3s ease;
+}
+.link-copia:hover {
+    text-decoration: underline;
+    font-size: 1.1em;
 }
 /* *************************************** */
 /** ESTILIZAÇÃO DA TABELA  */

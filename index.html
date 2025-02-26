@@ -14,7 +14,6 @@
 <body>
     <div class="wrapper">
         <main>
-<!--! Parei Aqui -->
 <!-- *********************************************************************************** -->
 <!-- * MENU -->
             <div class="faixa-topo">
@@ -28,7 +27,7 @@
 
                     <!-- Bairro Alto da Lapa -->
                     <div class="menu-item">
-                        <button class="menu-btn">Alto da Lapa</button>
+                        <button class="menu-btn" onclick="window.location.href='#bairro-altoLapa'">Alto da Lapa</button>
                         <div class="submenu">
                             <a href="#apto01">Apto 01</a>
                             <a href="#apto02">Apto 02</a>
@@ -37,7 +36,7 @@
 
                     <!-- Bairro Sumarezinho -->
                     <div class="menu-item">
-                        <button class="menu-btn">Sumarezinho</button>
+                        <button class="menu-btn" onclick="window.location.href='#bairro-sumarezinho'">Sumarezinho</button>
                         <div class="submenu">
                             <a href="#apto03">Apto 03</a>
                             <a href="#apto04">Apto 04</a>
@@ -48,7 +47,7 @@
 
                     <!-- Bairro Lapa -->
                     <div class="menu-item">
-                        <button class="menu-btn">Lapa</button>
+                        <button class="menu-btn" onclick="window.location.href='#bairro-centroLapa'">Centro Lapa</button>
                         <div class="submenu">
                             <a href="#apto07">Apto 07</a>
                             <a href="#apto08">Apto 08</a>
@@ -63,7 +62,7 @@
                 <div class="box-text reveal-left delay-200">
                     <h1> Pesquisa: </h1>
                     <h1> Studios e </h1>
-                    <h1> Apartamentos 1 Dorm</h1>
+                    <h1> Apartamentos 1 Dorm / Sem Vaga</h1>
                     <h1> em SP </h1>
                 </div>
             </section>
@@ -72,15 +71,15 @@
                 <div class="container parametros-gerais">
                     <h2>Parâmetros Gerais</h2>
                     <div class="box-colunas">
-                        <div class="coluna-1 delay-200">
+                        <div class="coluna-1 delay-100">
                             <p>Sem linha de crédito (desempregada e sem fgts) </p>
                             <p>Documento de Doação para Alexandre </p>
                         </div>
-                        <div class="coluna-2 delay-300">
+                        <div class="coluna-2 delay-200">
                             <p>Não dá pra comprar a Financiado </p>
                             <p>Negociar pagamento a vista com Desconto?</p>
                         </div>
-                        <div class="coluna-3 delay-400">
+                        <div class="coluna-3 delay-300">
                             <p>Ítens importantes para Morar em SP</p>
                             <p>Análise de Valorização do Imóvel Ano/Perfil</p>
                         </div>
@@ -130,7 +129,8 @@
                             <tbody>
                                 <tr>
                                     <td><a href="#apto01">Apto 01</a></td>
-                                    <td><a href="https://www.quintoandar.com.br/imovel/894672371/comprar/apartamento-1-quarto-lapa-sao-paulo?from_route=%22search_results%22&house_tags=visualized&search_id=%2205b40db9-7ccf-4eb3-a959-6377d9b81980%22&search_rank=%7B%22sortMode%22%3A%22distance%22%2C%22searchMode%22%3A%22list%22%2C%22resultsOrigin%22%3A%22search%22%2C%22rank%22%3A9%2C%22personalization%22%3Atrue%7D" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Rua Camburiú, 177</a></td>
+                                    <td><a class="link-imovel" 
+                                        data-apto="apto01" href="https://www.quintoandar.com.br/imovel/894672371/comprar/apartamento-1-quarto-lapa-sao-paulo?from_route=%22search_results%22&house_tags=visualized&search_id=%2205b40db9-7ccf-4eb3-a959-6377d9b81980%22&search_rank=%7B%22sortMode%22%3A%22distance%22%2C%22searchMode%22%3A%22list%22%2C%22resultsOrigin%22%3A%22search%22%2C%22rank%22%3A9%2C%22personalization%22%3Atrue%7D" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Rua Camburiú, 177</a></td>
                                     <td>25</td>
                                     <td>1 Dorm</td>
                                     <td>Térreo</td>
@@ -152,7 +152,8 @@
     <!-- ******************************************************* -->
                                 <tr>
                                     <td><a href="#apto02">Apto 02</a></td>
-                                    <td><a href="https://www.quintoandar.com.br/imovel/894660166/comprar" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Rua Camburiú, 177</a></td>
+                                    <td><a class="link-imovel" 
+                                        data-apto="apto02" href="https://www.quintoandar.com.br/imovel/894660166/comprar" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Rua Camburiú, 177</a></td>
                                     <td>25</td>
                                     <td>1 Dorm</td>
                                     <td>Subsolo</td>
@@ -174,7 +175,8 @@
     <!-- ******************************************************* -->
                                 <tr>
                                     <td><a href="#apto03">Apto 03</a></td>
-                                    <td><a href="https://www.quintoandar.com.br/imovel/894682521/comprar/kitnet-1-quarto-perdizes-sao-paulo?utm_source=shared&utm_campaign=sale&utm_medium=copy_share" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Rua Heitor Penteado, 2122</a></td>
+                                    <td><a class="link-imovel" 
+                                        data-apto="apto03" href="https://www.quintoandar.com.br/imovel/894682521/comprar/kitnet-1-quarto-perdizes-sao-paulo?utm_source=shared&utm_campaign=sale&utm_medium=copy_share" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Rua Heitor Penteado, 2122</a></td>
                                     <td>28</td>
                                     <td>1 Dorm</td>
                                     <td>3° And</td>
@@ -196,7 +198,8 @@
     <!-- ******************************************************* -->
                                 <tr>
                                     <td><a href="#apto04">Apto 04</a></td>
-                                    <td><a href="https://quintoandar.com.br/imovel/894550074/comprar/kitnet-1-quarto-sumarezinho-sao-paulo?utm_campaign=sale&utm_source=shared&utm_medium=custom_share" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Rua Heitor Penteado, 2122</a></td>
+                                    <td><a class="link-imovel" 
+                                        data-apto="apto04" href="https://quintoandar.com.br/imovel/894550074/comprar/kitnet-1-quarto-sumarezinho-sao-paulo?utm_campaign=sale&utm_source=shared&utm_medium=custom_share" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Rua Heitor Penteado, 2122</a></td>
                                     <td>27</td>
                                     <td>1 Dorm</td>
                                     <td>3° And</td>
@@ -218,7 +221,8 @@
     <!-- ******************************************************* -->
                                 <tr>
                                     <td><a href="#apto05">Apto 05</a></td>
-                                    <td><a href="https://quintoandar.com.br/imovel/894448275/comprar/apartamento-1-quarto-sumarezinho-sao-paulo?utm_campaign=sale&utm_source=shared&utm_medium=custom_share" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Rua Heitor Penteado, 2009</a></td>
+                                    <td><a class="link-imovel" 
+                                        data-apto="apto05" href="https://quintoandar.com.br/imovel/894448275/comprar/apartamento-1-quarto-sumarezinho-sao-paulo?utm_campaign=sale&utm_source=shared&utm_medium=custom_share" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Rua Heitor Penteado, 2009</a></td>
                                     <td>40</td>
                                     <td>1 Dorm</td>
                                     <td>Subsolo</td>
@@ -240,7 +244,8 @@
     <!-- ******************************************************* -->
                                 <tr>
                                     <td><a href="#apto06">Apto 06</a></td>
-                                    <td><a href="https://quintoandar.com.br/imovel/893748883/comprar/apartamento-1-quarto-sumarezinho-sao-paulo?utm_campaign=sale&utm_source=shared&utm_medium=custom_share" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Rua Heitor Penteado, 2009</a></td>
+                                    <td><a class="link-imovel" 
+                                        data-apto="apto06" href="https://quintoandar.com.br/imovel/893748883/comprar/apartamento-1-quarto-sumarezinho-sao-paulo?utm_campaign=sale&utm_source=shared&utm_medium=custom_share" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Rua Heitor Penteado, 2009</a></td>
                                     <td>41</td>
                                     <td>1 Dorm</td>
                                     <td>Subsolo</td>
@@ -262,7 +267,8 @@
     <!-- ******************************************************* -->
                                 <tr>
                                     <td><a href="#apto07">Apto 07</a></td>
-                                    <td><a href="https://quintoandar.com.br/imovel/894507300/comprar/apartamento-1-quarto-agua-branca-sao-paulo?utm_campaign=sale&utm_source=shared&utm_medium=custom_share" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Rua Guaicurus, 827 407</a></td>
+                                    <td><a class="link-imovel" 
+                                        data-apto="apto07" href="https://quintoandar.com.br/imovel/894507300/comprar/apartamento-1-quarto-agua-branca-sao-paulo?utm_campaign=sale&utm_source=shared&utm_medium=custom_share" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Rua Guaicurus, 827 407</a></td>
                                     <td>31</td>
                                     <td>1 Dorm</td>
                                     <td>4° And</td>
@@ -284,7 +290,8 @@
     <!-- ******************************************************* -->
                                 <tr>
                                     <td><a href="#apto08">Apto 08</a></td>
-                                    <td><a href="https://quintoandar.com.br/imovel/894508637/comprar/apartamento-1-quarto-lapa-sao-paulo?utm_campaign=sale&utm_source=shared&utm_medium=custom_share" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Rua Guaicurus, 827 207</a></td>
+                                    <td><a class="link-imovel" 
+                                        data-apto="apto08" href="https://quintoandar.com.br/imovel/894508637/comprar/apartamento-1-quarto-lapa-sao-paulo?utm_campaign=sale&utm_source=shared&utm_medium=custom_share" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Rua Guaicurus, 827 207</a></td>
                                     <td>31</td>
                                     <td>1 Dorm</td>
                                     <td>2° And</td>
@@ -306,7 +313,8 @@
     <!-- ******************************************************* -->
                                 <tr>
                                     <td><a href="#apto09">Apto 09</a></td>
-                                    <td><a href="https://quintoandar.com.br/imovel/894703308/comprar/apartamento-1-quarto-vila-romana-sao-paulo?utm_campaign=sale&utm_source=shared&utm_medium=custom_share" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Rua Catão, xxx</a></td>
+                                    <td><a class="link-imovel" 
+                                        data-apto="apto09" href="https://quintoandar.com.br/imovel/894703308/comprar/apartamento-1-quarto-vila-romana-sao-paulo?utm_campaign=sale&utm_source=shared&utm_medium=custom_share" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Rua Catão, xxx</a></td>
                                     <td>51</td>
                                     <td>1 Dorm</td>
                                     <td>?° And</td>
@@ -334,7 +342,7 @@
 <!-- *********************************************************************************** -->
 <!-- * 03 ANALISE DO BAIRRO - ALTO DA LAPA -->
             <!-- Imagem 03 -->
-            <section class="module parallax parallax-alto">
+            <section class="module parallax parallax-alto" id="bairro-altoLapa">
                 <div class="box-text reveal-left delay-200">
                     <h1>Análise do Bairro:</h1>
                     <h1>Alto da Lapa</h1>
@@ -344,26 +352,28 @@
             <!-- Texto 02 -->
             <section class="module content bairro">
                 <div class="container pros">
-                    <h2>Prós</h2>
-                    <p>1- O que tem no apto</p>
-                    <p>2-Andar - Térreo com 3 Subsolo</p>
-                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
-                    <p>4-Varanda - Pequena</p>
-                    <p>5-Vista Interrompida</p>
-                    <p>6-Iluminação - Natural</p>
-                    <p>x-Sol da manhã até 13h</p>
-                    <p>7-pANORAMA Localização: Natureza/Bairro</p>
-                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
-                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                    <h2>Prós (👍 Positivo)</h2>
+                    <p>🚇	Metrô =>	100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público =>	Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🏪	Comércio =>	Mercado na rua / Somente de carro</p>
+                    <p>🌳	Áreas Verdes =>	Parque a 200m / Sem áreas verdes próximas</p>
+                    <p>🚗	Estacionamento => Vagas na rua fáceis / Difícil estacionar</p>
+                    <p>📢	Barulho =>	Rua silenciosa / Muito movimento</p>
+                    <p>🚨	Segurança =>	Área tranquila / Índice alto de furtos</p>
+                    <p>🏥	Saúde =>	Posto de saúde próximo / Sem hospitais por perto</p>
+                    <p>📚	Educação =>	Escolas e creches próximas / Precisa de transporte</p>
                 </div>
                 <div class="container contras">
-                    <h2>Contras</h2>
-                    <p>1- Pequeno</p>
-                    <p>2-</p>
-                    <p>3-</p>
-                    <p>4-</p>
-                    <p>5-</p>
-                    <p>6-</p>
+                    <h2>Contras (👎 Negativo)</h2>
+                    <p>🚇	Metrô =>	100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público =>	Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🏪	Comércio =>	Mercado na rua / Somente de carro</p>
+                    <p>🌳	Áreas Verdes =>	Parque a 200m / Sem áreas verdes próximas</p>
+                    <p>🚗	Estacionamento => Vagas na rua fáceis / Difícil estacionar</p>
+                    <p>📢	Barulho =>	Rua silenciosa / Muito movimento</p>
+                    <p>🚨	Segurança =>	Área tranquila / Índice alto de furtos</p>
+                    <p>🏥	Saúde =>	Posto de saúde próximo / Sem hospitais por perto</p>
+                    <p>📚	Educação =>	Escolas e creches próximas / Precisa de transporte</p>
                 </div>
             </section>
 <!-- *********************************************************************************** -->
@@ -376,33 +386,43 @@
                 </div>
                 <div class="box-subtext dados-apto reveal-left delay-500">
                     <!-- Fazer um bg Esfumaçado -->
-                    <h3> R$315k 25m² Térreo </h3>
-                    <p>Link Imagens: </p>
+                    <h3>R$315k - 25m² - Térreo</h3>
+                    <p>
+                        <a class="link-copia" data-apto="apto01" href="#" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Link Imagens do Apartamento</a>
+                    </p>
                 </div>
             </section>
             <!-- Texto 02 -->
             <section class="module content unidade">
                 <div class="container pros">
-                    <h2>Prós</h2>
-                    <p>1- O que tem no apto</p>
-                    <p>2-Andar - Térreo com 3 Subsolo</p>
-                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
-                    <p>4-Varanda - Pequena</p>
-                    <p>5-Vista Interrompida</p>
-                    <p>6-Iluminação - Natural</p>
-                    <p>x-Sol da manhã até 13h</p>
-                    <p>7-Localização: Natureza/Bairro</p>
-                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
-                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                    <h2>Prós (👍 Positivo)</h2>
+                    <p>🌞	Iluminação => Sol da manhã até 13h / Pouca luz natural</p>
+                    <p>👀   Vista => Livre / Interrompida</p>
+                    <p>🏢	Andar => Térreo / Último andar, sem elevador</p>
+                    <p>🏡	Varanda => Varanda grande / Sem varanda</p>
+                    <p>🏙️   Característica da Rua => Residencial / Comercial</p>
+                    <p>🚪	Segurança => Porta reforçada" ou "Fechadura simples"</p>
+                    <p>🛋️	 Mobília => Planejados na cozinha e quarto / Sem móveis embutidos</p>
+                    <p>🔇	Isolamento Acústico => Paredes duplas, sem ruído / Barulho dos vizinhos</p>
+                    <p>🚇	Metrô => 100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público => Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🚗   Estacionamento => Difícil parar na rua</p>
+                    <p>💰	Custo-benefício => Ótima relação preço/localização / Alto preço por metro²</p>
                 </div>
                 <div class="container contras">
-                    <h2>Contras</h2>
-                    <p>1- Pequeno</p>
-                    <p>2-</p>
-                    <p>3-</p>
-                    <p>4-</p>
-                    <p>5-</p>
-                    <p>6-</p>
+                    <h2>Contras (👎 Negativo)</h2>
+                    <p>🌞	Iluminação => Sol da manhã até 13h / Pouca luz natural</p>
+                    <p>👀   Vista => Livre / Interrompida</p>
+                    <p>🏢	Andar => Térreo / Último andar, sem elevador</p>
+                    <p>🏡	Varanda => Varanda grande / Sem varanda</p>
+                    <p>🏙️   Característica da Rua => Residencial / Comercial</p>
+                    <p>🚪	Segurança => Porta reforçada" ou "Fechadura simples"</p>
+                    <p>🛋️	 Mobília => Planejados na cozinha e quarto / Sem móveis embutidos</p>
+                    <p>🔇	Isolamento Acústico => Paredes duplas, sem ruído / Barulho dos vizinhos</p>
+                    <p>🚇	Metrô => 100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público => Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🚗   Estacionamento => Difícil parar na rua</p>
+                    <p>💰	Custo-benefício => Ótima relação preço/localização / Alto preço por metro²</p>
                 </div>
             </section>
 <!-- *********************************************************************************** -->
@@ -415,40 +435,50 @@
                 </div>
                 <div class="box-subtext dados-apto reveal-left delay-500">
                     <!-- Fazer um bg Esfumaçado -->
-                    <h3> R$290k 25m² Subsolo </h3>
-                    <p>Link Imagens: </p>
+                    <h3> R$310k 25m² Subsolo </h3>
+                    <p>
+                        <a class="link-copia" data-apto="apto02" href="#" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Link Imagens do Apartamento</a>
+                    </p>
                 </div>
             </section>
             <!-- Texto 02 -->
             <section class="module content unidade">
                 <div class="container pros">
-                    <h2>Prós</h2>
-                    <p>1- O que tem no apto</p>
-                    <p>2-Andar - Térreo com 3 Subsolo</p>
-                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
-                    <p>4-Varanda - Pequena</p>
-                    <p>5-Vista Interrompida</p>
-                    <p>6-Iluminação - Natural</p>
-                    <p>x-Sol da manhã até 13h</p>
-                    <p>7-Localização: Natureza/Bairro</p>
-                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
-                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                    <h2>Prós (👍 Positivo)</h2>
+                    <p>🌞	Iluminação => Sol da manhã até 13h / Pouca luz natural</p>
+                    <p>👀   Vista => Livre / Interrompida</p>
+                    <p>🏢	Andar => Térreo / Último andar, sem elevador</p>
+                    <p>🏡	Varanda => Varanda grande / Sem varanda</p>
+                    <p>🏙️   Característica da Rua => Residencial / Comercial</p>
+                    <p>🚪	Segurança => Porta reforçada" ou "Fechadura simples"</p>
+                    <p>🛋️	 Mobília => Planejados na cozinha e quarto / Sem móveis embutidos</p>
+                    <p>🔇	Isolamento Acústico => Paredes duplas, sem ruído / Barulho dos vizinhos</p>
+                    <p>🚇	Metrô => 100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público => Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🚗   Estacionamento => Difícil parar na rua</p>
+                    <p>💰	Custo-benefício => Ótima relação preço/localização / Alto preço por metro²</p>
                 </div>
                 <div class="container contras">
-                    <h2>Contras</h2>
-                    <p>1- Pequeno</p>
-                    <p>2-</p>
-                    <p>3-</p>
-                    <p>4-</p>
-                    <p>5-</p>
-                    <p>6-</p>
+                    <h2>Contras (👎 Negativo)</h2>
+                    <p>🌞	Iluminação => Sol da manhã até 13h / Pouca luz natural</p>
+                    <p>👀   Vista => Livre / Interrompida</p>
+                    <p>🏢	Andar => Térreo / Último andar, sem elevador</p>
+                    <p>🏡	Varanda => Varanda grande / Sem varanda</p>
+                    <p>🏙️   Característica da Rua => Residencial / Comercial</p>
+                    <p>🚪	Segurança => Porta reforçada" ou "Fechadura simples"</p>
+                    <p>🛋️	 Mobília => Planejados na cozinha e quarto / Sem móveis embutidos</p>
+                    <p>🔇	Isolamento Acústico => Paredes duplas, sem ruído / Barulho dos vizinhos</p>
+                    <p>🚇	Metrô => 100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público => Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🚗   Estacionamento => Difícil parar na rua</p>
+                    <p>💰	Custo-benefício => Ótima relação preço/localização / Alto preço por metro²</p>
                 </div>
             </section>
 <!-- *********************************************************************************** -->
 <!-- * 06 ANALISE DO BAIRRO - SUMAREZINHO -->
 <!-- Sumarezinho -->
             <!-- Imagem 03 -->
-            <section class="module parallax parallax-alto">
+            <section class="module parallax parallax-alto" id="bairro-sumarezinho">
                 <div class="box-text reveal-left delay-200">
                     <h1>Análise do Bairro:</h1>
                     <h1>Sumarezinho</h1>
@@ -458,26 +488,28 @@
             <!-- Texto 02 -->
             <section class="module content bairro">
                 <div class="container pros">
-                    <h2>Prós</h2>
-                    <p>1- O que tem no apto</p>
-                    <p>2-Andar - Térreo com 3 Subsolo</p>
-                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
-                    <p>4-Varanda - Pequena</p>
-                    <p>5-Vista Interrompida</p>
-                    <p>6-Iluminação - Natural</p>
-                    <p>x-Sol da manhã até 13h</p>
-                    <p>7-pANORAMA Localização: Natureza/Bairro</p>
-                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
-                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                    <h2>Prós (👍 Positivo)</h2>
+                    <p>🚇	Metrô =>	100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público =>	Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🏪	Comércio =>	Mercado na rua / Somente de carro</p>
+                    <p>🌳	Áreas Verdes =>	Parque a 200m / Sem áreas verdes próximas</p>
+                    <p>🚗	Estacionamento => Vagas na rua fáceis / Difícil estacionar</p>
+                    <p>📢	Barulho =>	Rua silenciosa / Muito movimento</p>
+                    <p>🚨	Segurança =>	Área tranquila / Índice alto de furtos</p>
+                    <p>🏥	Saúde =>	Posto de saúde próximo / Sem hospitais por perto</p>
+                    <p>📚	Educação =>	Escolas e creches próximas / Precisa de transporte</p>
                 </div>
                 <div class="container contras">
-                    <h2>Contras</h2>
-                    <p>1- Pequeno</p>
-                    <p>2-</p>
-                    <p>3-</p>
-                    <p>4-</p>
-                    <p>5-</p>
-                    <p>6-</p>
+                    <h2>Contras (👎 Negativo)</h2>
+                    <p>🚇	Metrô =>	100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público =>	Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🏪	Comércio =>	Mercado na rua / Somente de carro</p>
+                    <p>🌳	Áreas Verdes =>	Parque a 200m / Sem áreas verdes próximas</p>
+                    <p>🚗	Estacionamento => Vagas na rua fáceis / Difícil estacionar</p>
+                    <p>📢	Barulho =>	Rua silenciosa / Muito movimento</p>
+                    <p>🚨	Segurança =>	Área tranquila / Índice alto de furtos</p>
+                    <p>🏥	Saúde =>	Posto de saúde próximo / Sem hospitais por perto</p>
+                    <p>📚	Educação =>	Escolas e creches próximas / Precisa de transporte</p>
                 </div>
             </section>
 <!-- *********************************************************************************** -->
@@ -485,38 +517,48 @@
             <!-- Imagem 04 -->
             <section class="module parallax parallax-apto01" id="apto03">
                 <div class="box-text reveal-left delay-200">
-                    <h1 id="apto01">Apto 03</h1>
-                    <h2>Rua Camburiú 177</h2>
+                    <h1>Apto 03</h1>
+                    <h2>Rua Heitor Penteado 2xxx</h2>
                 </div>
                 <div class="box-subtext dados-apto reveal-left delay-500">
                     <!-- Fazer um bg Esfumaçado -->
-                    <h3> R$315k 25m² Térreo </h3>
-                    <p>Link Imagens: </p>
+                    <h3>R$340k - 28m² - até 3°</h3>
+                    <p>
+                        <a class="link-copia" data-apto="apto03" href="#" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Link Imagens do Apartamento</a>
+                    </p>
                 </div>
             </section>
             <!-- Texto 02 -->
             <section class="module content unidade">
                 <div class="container pros">
-                    <h2>Prós</h2>
-                    <p>1- O que tem no apto</p>
-                    <p>2-Andar - Térreo com 3 Subsolo</p>
-                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
-                    <p>4-Varanda - Pequena</p>
-                    <p>5-Vista Interrompida</p>
-                    <p>6-Iluminação - Natural</p>
-                    <p>x-Sol da manhã até 13h</p>
-                    <p>7-Localização: Natureza/Bairro</p>
-                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
-                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                    <h2>Prós (👍 Positivo)</h2>
+                    <p>🌞	Iluminação => Sol da manhã até 13h / Pouca luz natural</p>
+                    <p>👀   Vista => Livre / Interrompida</p>
+                    <p>🏢	Andar => Térreo / Último andar, sem elevador</p>
+                    <p>🏡	Varanda => Varanda grande / Sem varanda</p>
+                    <p>🏙️   Característica da Rua => Residencial / Comercial</p>
+                    <p>🚪	Segurança => Porta reforçada" ou "Fechadura simples"</p>
+                    <p>🛋️	 Mobília => Planejados na cozinha e quarto / Sem móveis embutidos</p>
+                    <p>🔇	Isolamento Acústico => Paredes duplas, sem ruído / Barulho dos vizinhos</p>
+                    <p>🚇	Metrô => 100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público => Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🚗   Estacionamento => Difícil parar na rua</p>
+                    <p>💰	Custo-benefício => Ótima relação preço/localização / Alto preço por metro²</p>
                 </div>
                 <div class="container contras">
-                    <h2>Contras</h2>
-                    <p>1- Pequeno</p>
-                    <p>2-</p>
-                    <p>3-</p>
-                    <p>4-</p>
-                    <p>5-</p>
-                    <p>6-</p>
+                    <h2>Contras (👎 Negativo)</h2>
+                    <p>🌞	Iluminação => Sol da manhã até 13h / Pouca luz natural</p>
+                    <p>👀   Vista => Livre / Interrompida</p>
+                    <p>🏢	Andar => Térreo / Último andar, sem elevador</p>
+                    <p>🏡	Varanda => Varanda grande / Sem varanda</p>
+                    <p>🏙️   Característica da Rua => Residencial / Comercial</p>
+                    <p>🚪	Segurança => Porta reforçada" ou "Fechadura simples"</p>
+                    <p>🛋️	 Mobília => Planejados na cozinha e quarto / Sem móveis embutidos</p>
+                    <p>🔇	Isolamento Acústico => Paredes duplas, sem ruído / Barulho dos vizinhos</p>
+                    <p>🚇	Metrô => 100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público => Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🚗   Estacionamento => Difícil parar na rua</p>
+                    <p>💰	Custo-benefício => Ótima relação preço/localização / Alto preço por metro²</p>
                 </div>
             </section>
 <!-- *********************************************************************************** -->
@@ -524,38 +566,48 @@
             <!-- Imagem 04 -->
             <section class="module parallax parallax-apto01" id="apto04">
                 <div class="box-text reveal-left delay-200">
-                    <h1 id="apto01">Apto 04</h1>
-                    <h2>Rua Camburiú 177</h2>
+                    <h1>Apto 04</h1>
+                    <h2>Rua Heitor Penteado 2xxx</h2>
                 </div>
                 <div class="box-subtext dados-apto reveal-left delay-500">
                     <!-- Fazer um bg Esfumaçado -->
-                    <h3> R$315k 25m² Térreo </h3>
-                    <p>Link Imagens: </p>
+                    <h3>R$320k - 27m² - até 3°</h3>
+                    <p>
+                        <a class="link-copia" data-apto="apto04" href="#" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Link Imagens do Apartamento</a>
+                    </p>
                 </div>
             </section>
             <!-- Texto 02 -->
             <section class="module content unidade">
                 <div class="container pros">
-                    <h2>Prós</h2>
-                    <p>1- O que tem no apto</p>
-                    <p>2-Andar - Térreo com 3 Subsolo</p>
-                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
-                    <p>4-Varanda - Pequena</p>
-                    <p>5-Vista Interrompida</p>
-                    <p>6-Iluminação - Natural</p>
-                    <p>x-Sol da manhã até 13h</p>
-                    <p>7-Localização: Natureza/Bairro</p>
-                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
-                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                    <h2>Prós (👍 Positivo)</h2>
+                    <p>🌞	Iluminação => Sol da manhã até 13h / Pouca luz natural</p>
+                    <p>👀   Vista => Livre / Interrompida</p>
+                    <p>🏢	Andar => Térreo / Último andar, sem elevador</p>
+                    <p>🏡	Varanda => Varanda grande / Sem varanda</p>
+                    <p>🏙️   Característica da Rua => Residencial / Comercial</p>
+                    <p>🚪	Segurança => Porta reforçada" ou "Fechadura simples"</p>
+                    <p>🛋️	 Mobília => Planejados na cozinha e quarto / Sem móveis embutidos</p>
+                    <p>🔇	Isolamento Acústico => Paredes duplas, sem ruído / Barulho dos vizinhos</p>
+                    <p>🚇	Metrô => 100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público => Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🚗   Estacionamento => Difícil parar na rua</p>
+                    <p>💰	Custo-benefício => Ótima relação preço/localização / Alto preço por metro²</p>
                 </div>
                 <div class="container contras">
-                    <h2>Contras</h2>
-                    <p>1- Pequeno</p>
-                    <p>2-</p>
-                    <p>3-</p>
-                    <p>4-</p>
-                    <p>5-</p>
-                    <p>6-</p>
+                    <h2>Contras (👎 Negativo)</h2>
+                    <p>🌞	Iluminação => Sol da manhã até 13h / Pouca luz natural</p>
+                    <p>👀   Vista => Livre / Interrompida</p>
+                    <p>🏢	Andar => Térreo / Último andar, sem elevador</p>
+                    <p>🏡	Varanda => Varanda grande / Sem varanda</p>
+                    <p>🏙️   Característica da Rua => Residencial / Comercial</p>
+                    <p>🚪	Segurança => Porta reforçada" ou "Fechadura simples"</p>
+                    <p>🛋️	 Mobília => Planejados na cozinha e quarto / Sem móveis embutidos</p>
+                    <p>🔇	Isolamento Acústico => Paredes duplas, sem ruído / Barulho dos vizinhos</p>
+                    <p>🚇	Metrô => 100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público => Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🚗   Estacionamento => Difícil parar na rua</p>
+                    <p>💰	Custo-benefício => Ótima relação preço/localização / Alto preço por metro²</p>
                 </div>
             </section>
 <!-- *********************************************************************************** -->
@@ -563,38 +615,48 @@
             <!-- Imagem 04 -->
             <section class="module parallax parallax-apto01" id="apto05">
                 <div class="box-text reveal-left delay-200">
-                    <h1 id="apto01">Apto 05</h1>
-                    <h2>Rua Camburiú 177</h2>
+                    <h1>Apto 05</h1>
+                    <h2>Rua Heitor Penteado 2009</h2>
                 </div>
                 <div class="box-subtext dados-apto reveal-left delay-500">
                     <!-- Fazer um bg Esfumaçado -->
-                    <h3> R$315k 25m² Térreo </h3>
-                    <p>Link Imagens: </p>
+                    <h3>R$280k - 40m² - até 3°</h3>
+                    <p>
+                        <a class="link-copia" data-apto="apto05" href="#" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Link Imagens do Apartamento</a>
+                    </p>
                 </div>
             </section>
             <!-- Texto 02 -->
             <section class="module content unidade">
                 <div class="container pros">
-                    <h2>Prós</h2>
-                    <p>1- O que tem no apto</p>
-                    <p>2-Andar - Térreo com 3 Subsolo</p>
-                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
-                    <p>4-Varanda - Pequena</p>
-                    <p>5-Vista Interrompida</p>
-                    <p>6-Iluminação - Natural</p>
-                    <p>x-Sol da manhã até 13h</p>
-                    <p>7-Localização: Natureza/Bairro</p>
-                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
-                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                    <h2>Prós (👍 Positivo)</h2>
+                    <p>🌞	Iluminação => Sol da manhã até 13h / Pouca luz natural</p>
+                    <p>👀   Vista => Livre / Interrompida</p>
+                    <p>🏢	Andar => Térreo / Último andar, sem elevador</p>
+                    <p>🏡	Varanda => Varanda grande / Sem varanda</p>
+                    <p>🏙️   Característica da Rua => Residencial / Comercial</p>
+                    <p>🚪	Segurança => Porta reforçada" ou "Fechadura simples"</p>
+                    <p>🛋️	 Mobília => Planejados na cozinha e quarto / Sem móveis embutidos</p>
+                    <p>🔇	Isolamento Acústico => Paredes duplas, sem ruído / Barulho dos vizinhos</p>
+                    <p>🚇	Metrô => 100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público => Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🚗   Estacionamento => Difícil parar na rua</p>
+                    <p>💰	Custo-benefício => Ótima relação preço/localização / Alto preço por metro²</p>
                 </div>
                 <div class="container contras">
-                    <h2>Contras</h2>
-                    <p>1- Pequeno</p>
-                    <p>2-</p>
-                    <p>3-</p>
-                    <p>4-</p>
-                    <p>5-</p>
-                    <p>6-</p>
+                    <h2>Contras (👎 Negativo)</h2>
+                    <p>🌞	Iluminação => Sol da manhã até 13h / Pouca luz natural</p>
+                    <p>👀   Vista => Livre / Interrompida</p>
+                    <p>🏢	Andar => Térreo / Último andar, sem elevador</p>
+                    <p>🏡	Varanda => Varanda grande / Sem varanda</p>
+                    <p>🏙️   Característica da Rua => Residencial / Comercial</p>
+                    <p>🚪	Segurança => Porta reforçada" ou "Fechadura simples"</p>
+                    <p>🛋️	 Mobília => Planejados na cozinha e quarto / Sem móveis embutidos</p>
+                    <p>🔇	Isolamento Acústico => Paredes duplas, sem ruído / Barulho dos vizinhos</p>
+                    <p>🚇	Metrô => 100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público => Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🚗   Estacionamento => Difícil parar na rua</p>
+                    <p>💰	Custo-benefício => Ótima relação preço/localização / Alto preço por metro²</p>
                 </div>
             </section>
 <!-- *********************************************************************************** -->
@@ -602,44 +664,54 @@
             <!-- Imagem 04 -->
             <section class="module parallax parallax-apto01" id="apto06">
                 <div class="box-text reveal-left delay-200">
-                    <h1 id="apto01">Apto 06</h1>
-                    <h2>Rua Camburiú 177</h2>
+                    <h1>Apto 06</h1>
+                    <h2>Rua Heitor Penteado 2009</h2>
                 </div>
                 <div class="box-subtext dados-apto reveal-left delay-500">
                     <!-- Fazer um bg Esfumaçado -->
-                    <h3> R$315k 25m² Térreo </h3>
-                    <p>Link Imagens: </p>
+                    <h3>R$290k - 41m² - até 3°</h3>
+                    <p>
+                        <a class="link-copia" data-apto="apto06" href="#" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Link Imagens do Apartamento</a>
+                    </p>
                 </div>
             </section>
             <!-- Texto 02 -->
             <section class="module content unidade">
                 <div class="container pros">
-                    <h2>Prós</h2>
-                    <p>1- O que tem no apto</p>
-                    <p>2-Andar - Térreo com 3 Subsolo</p>
-                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
-                    <p>4-Varanda - Pequena</p>
-                    <p>5-Vista Interrompida</p>
-                    <p>6-Iluminação - Natural</p>
-                    <p>x-Sol da manhã até 13h</p>
-                    <p>7-Localização: Natureza/Bairro</p>
-                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
-                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                    <h2>Prós (👍 Positivo)</h2>
+                    <p>🌞	Iluminação => Sol da manhã até 13h / Pouca luz natural</p>
+                    <p>👀   Vista => Livre / Interrompida</p>
+                    <p>🏢	Andar => Térreo / Último andar, sem elevador</p>
+                    <p>🏡	Varanda => Varanda grande / Sem varanda</p>
+                    <p>🏙️   Característica da Rua => Residencial / Comercial</p>
+                    <p>🚪	Segurança => Porta reforçada" ou "Fechadura simples"</p>
+                    <p>🛋️	 Mobília => Planejados na cozinha e quarto / Sem móveis embutidos</p>
+                    <p>🔇	Isolamento Acústico => Paredes duplas, sem ruído / Barulho dos vizinhos</p>
+                    <p>🚇	Metrô => 100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público => Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🚗   Estacionamento => Difícil parar na rua</p>
+                    <p>💰	Custo-benefício => Ótima relação preço/localização / Alto preço por metro²</p>
                 </div>
                 <div class="container contras">
-                    <h2>Contras</h2>
-                    <p>1- Pequeno</p>
-                    <p>2-</p>
-                    <p>3-</p>
-                    <p>4-</p>
-                    <p>5-</p>
-                    <p>6-</p>
+                    <h2>Contras (👎 Negativo)</h2>
+                    <p>🌞	Iluminação => Sol da manhã até 13h / Pouca luz natural</p>
+                    <p>👀   Vista => Livre / Interrompida</p>
+                    <p>🏢	Andar => Térreo / Último andar, sem elevador</p>
+                    <p>🏡	Varanda => Varanda grande / Sem varanda</p>
+                    <p>🏙️   Característica da Rua => Residencial / Comercial</p>
+                    <p>🚪	Segurança => Porta reforçada" ou "Fechadura simples"</p>
+                    <p>🛋️	 Mobília => Planejados na cozinha e quarto / Sem móveis embutidos</p>
+                    <p>🔇	Isolamento Acústico => Paredes duplas, sem ruído / Barulho dos vizinhos</p>
+                    <p>🚇	Metrô => 100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público => Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🚗   Estacionamento => Difícil parar na rua</p>
+                    <p>💰	Custo-benefício => Ótima relação preço/localização / Alto preço por metro²</p>
                 </div>
             </section>
 <!-- *********************************************************************************** -->
 <!-- * 00 ANALISE DO BAIRRO - CENTRO DA LAPA -->
 <!-- Lapa -->
-            <section class="module parallax parallax-alto">
+            <section class="module parallax parallax-alto" id="bairro-centroLapa">
                 <div class="box-text reveal-left delay-200">
                     <h1>Análise do Bairro:</h1>
                     <h1>Centro da Lapa</h1>
@@ -649,26 +721,28 @@
             <!-- Texto 02 -->
             <section class="module content bairro">
                 <div class="container pros">
-                    <h2>Prós</h2>
-                    <p>1- O que tem no apto</p>
-                    <p>2-Andar - Térreo com 3 Subsolo</p>
-                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
-                    <p>4-Varanda - Pequena</p>
-                    <p>5-Vista Interrompida</p>
-                    <p>6-Iluminação - Natural</p>
-                    <p>x-Sol da manhã até 13h</p>
-                    <p>7-pANORAMA Localização: Natureza/Bairro</p>
-                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
-                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                    <h2>Prós (👍 Positivo)</h2>
+                    <p>🚇	Metrô =>	100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público =>	Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🏪	Comércio =>	Mercado na rua / Somente de carro</p>
+                    <p>🌳	Áreas Verdes =>	Parque a 200m / Sem áreas verdes próximas</p>
+                    <p>🚗	Estacionamento => Vagas na rua fáceis / Difícil estacionar</p>
+                    <p>📢	Barulho =>	Rua silenciosa / Muito movimento</p>
+                    <p>🚨	Segurança =>	Área tranquila / Índice alto de furtos</p>
+                    <p>🏥	Saúde =>	Posto de saúde próximo / Sem hospitais por perto</p>
+                    <p>📚	Educação =>	Escolas e creches próximas / Precisa de transporte</p>
                 </div>
                 <div class="container contras">
-                    <h2>Contras</h2>
-                    <p>1- Pequeno</p>
-                    <p>2-</p>
-                    <p>3-</p>
-                    <p>4-</p>
-                    <p>5-</p>
-                    <p>6-</p>
+                    <h2>Contras (👎 Negativo)</h2>
+                    <p>🚇	Metrô =>	100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público =>	Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🏪	Comércio =>	Mercado na rua / Somente de carro</p>
+                    <p>🌳	Áreas Verdes =>	Parque a 200m / Sem áreas verdes próximas</p>
+                    <p>🚗	Estacionamento => Vagas na rua fáceis / Difícil estacionar</p>
+                    <p>📢	Barulho =>	Rua silenciosa / Muito movimento</p>
+                    <p>🚨	Segurança =>	Área tranquila / Índice alto de furtos</p>
+                    <p>🏥	Saúde =>	Posto de saúde próximo / Sem hospitais por perto</p>
+                    <p>📚	Educação =>	Escolas e creches próximas / Precisa de transporte</p>
                 </div>
             </section>
 <!-- Imagem 04 -->
@@ -677,37 +751,47 @@
             <section class="module parallax parallax-apto01" id="apto07">
                 <div class="box-text reveal-left delay-200">
                     <h1>Apto 07</h1>
-                    <h2>Rua Camburiú 177</h2>
+                    <h2>Rua Guaicurus 8xx</h2>
                 </div>
                 <div class="box-subtext dados-apto reveal-left delay-500">
                     <!-- Fazer um bg Esfumaçado -->
-                    <h3> R$315k 25m² Térreo </h3>
-                    <p>Link Imagens: </p>
+                    <h3>R$285k - 31m² - 4° andar </h3>
+                    <p>
+                        <a class="link-copia" data-apto="apto07" href="#" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Link Imagens do Apartamento</a>
+                    </p>
                 </div>
             </section>
             <!-- Texto 02 -->
             <section class="module content unidade">
                 <div class="container pros">
-                    <h2>Prós</h2>
-                    <p>1- O que tem no apto</p>
-                    <p>2-Andar - Térreo com 3 Subsolo</p>
-                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
-                    <p>4-Varanda - Pequena</p>
-                    <p>5-Vista Interrompida</p>
-                    <p>6-Iluminação - Natural</p>
-                    <p>x-Sol da manhã até 13h</p>
-                    <p>7-Localização: Natureza/Bairro</p>
-                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
-                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                    <h2>Prós (👍 Positivo)</h2>
+                    <p>🌞	Iluminação => Sol da manhã até 13h / Pouca luz natural</p>
+                    <p>👀   Vista => Livre / Interrompida</p>
+                    <p>🏢	Andar => Térreo / Último andar, sem elevador</p>
+                    <p>🏡	Varanda => Varanda grande / Sem varanda</p>
+                    <p>🏙️   Característica da Rua => Residencial / Comercial</p>
+                    <p>🚪	Segurança => Porta reforçada" ou "Fechadura simples"</p>
+                    <p>🛋️	 Mobília => Planejados na cozinha e quarto / Sem móveis embutidos</p>
+                    <p>🔇	Isolamento Acústico => Paredes duplas, sem ruído / Barulho dos vizinhos</p>
+                    <p>🚇	Metrô => 100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público => Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🚗   Estacionamento => Difícil parar na rua</p>
+                    <p>💰	Custo-benefício => Ótima relação preço/localização / Alto preço por metro²</p>
                 </div>
                 <div class="container contras">
-                    <h2>Contras</h2>
-                    <p>1- Pequeno</p>
-                    <p>2-</p>
-                    <p>3-</p>
-                    <p>4-</p>
-                    <p>5-</p>
-                    <p>6-</p>
+                    <h2>Contras (👎 Negativo)</h2>
+                    <p>🌞	Iluminação => Sol da manhã até 13h / Pouca luz natural</p>
+                    <p>👀   Vista => Livre / Interrompida</p>
+                    <p>🏢	Andar => Térreo / Último andar, sem elevador</p>
+                    <p>🏡	Varanda => Varanda grande / Sem varanda</p>
+                    <p>🏙️   Característica da Rua => Residencial / Comercial</p>
+                    <p>🚪	Segurança => Porta reforçada" ou "Fechadura simples"</p>
+                    <p>🛋️	 Mobília => Planejados na cozinha e quarto / Sem móveis embutidos</p>
+                    <p>🔇	Isolamento Acústico => Paredes duplas, sem ruído / Barulho dos vizinhos</p>
+                    <p>🚇	Metrô => 100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público => Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🚗   Estacionamento => Difícil parar na rua</p>
+                    <p>💰	Custo-benefício => Ótima relação preço/localização / Alto preço por metro²</p>
                 </div>
             </section>
 <!-- *********************************************************************************** -->
@@ -715,37 +799,47 @@
             <section class="module parallax parallax-apto01" id="apto08">
                 <div class="box-text reveal-left delay-200">
                     <h1>Apto 08</h1>
-                    <h2>Rua Camburiú 177</h2>
+                    <h2>Rua Guaicurus 8xx</h2>
                 </div>
                 <div class="box-subtext dados-apto reveal-left delay-500">
                     <!-- Fazer um bg Esfumaçado -->
-                    <h3> R$315k 25m² Térreo </h3>
-                    <p>Link Imagens: </p>
+                    <h3>R$755k - 31m² - 2° andar </h3>
+                    <p>
+                        <a class="link-copia" data-apto="apto08" href="#" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Link Imagens do Apartamento</a>
+                    </p>
                 </div>
             </section>
             <!-- Texto 02 -->
             <section class="module content unidade">
                 <div class="container pros">
-                    <h2>Prós</h2>
-                    <p>1- O que tem no apto</p>
-                    <p>2-Andar - Térreo com 3 Subsolo</p>
-                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
-                    <p>4-Varanda - Pequena</p>
-                    <p>5-Vista Interrompida</p>
-                    <p>6-Iluminação - Natural</p>
-                    <p>x-Sol da manhã até 13h</p>
-                    <p>7-Localização: Natureza/Bairro</p>
-                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
-                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                    <h2>Prós (👍 Positivo)</h2>
+                    <p>🌞	Iluminação => Sol da manhã até 13h / Pouca luz natural</p>
+                    <p>👀   Vista => Livre / Interrompida</p>
+                    <p>🏢	Andar => Térreo / Último andar, sem elevador</p>
+                    <p>🏡	Varanda => Varanda grande / Sem varanda</p>
+                    <p>🏙️   Característica da Rua => Residencial / Comercial</p>
+                    <p>🚪	Segurança => Porta reforçada" ou "Fechadura simples"</p>
+                    <p>🛋️	 Mobília => Planejados na cozinha e quarto / Sem móveis embutidos</p>
+                    <p>🔇	Isolamento Acústico => Paredes duplas, sem ruído / Barulho dos vizinhos</p>
+                    <p>🚇	Metrô => 100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público => Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🚗   Estacionamento => Difícil parar na rua</p>
+                    <p>💰	Custo-benefício => Ótima relação preço/localização / Alto preço por metro²</p>
                 </div>
                 <div class="container contras">
-                    <h2>Contras</h2>
-                    <p>1- Pequeno</p>
-                    <p>2-</p>
-                    <p>3-</p>
-                    <p>4-</p>
-                    <p>5-</p>
-                    <p>6-</p>
+                    <h2>Contras (👎 Negativo)</h2>
+                    <p>🌞	Iluminação => Sol da manhã até 13h / Pouca luz natural</p>
+                    <p>👀   Vista => Livre / Interrompida</p>
+                    <p>🏢	Andar => Térreo / Último andar, sem elevador</p>
+                    <p>🏡	Varanda => Varanda grande / Sem varanda</p>
+                    <p>🏙️   Característica da Rua => Residencial / Comercial</p>
+                    <p>🚪	Segurança => Porta reforçada" ou "Fechadura simples"</p>
+                    <p>🛋️	 Mobília => Planejados na cozinha e quarto / Sem móveis embutidos</p>
+                    <p>🔇	Isolamento Acústico => Paredes duplas, sem ruído / Barulho dos vizinhos</p>
+                    <p>🚇	Metrô => 100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público => Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🚗   Estacionamento => Difícil parar na rua</p>
+                    <p>💰	Custo-benefício => Ótima relação preço/localização / Alto preço por metro²</p>
                 </div>
             </section>
 <!-- *********************************************************************************** -->
@@ -753,37 +847,47 @@
             <section class="module parallax parallax-apto01" id="apto09">
                 <div class="box-text reveal-left delay-200">
                     <h1>Apto 09</h1>
-                    <h2>Rua Camburiú 177</h2>
+                    <h2>Rua Catão xxx</h2>
                 </div>
                 <div class="box-subtext dados-apto reveal-left delay-500">
                     <!-- Fazer um bg Esfumaçado -->
-                    <h3> R$315k 25m² Térreo </h3>
-                    <p>Link Imagens: </p>
+                    <h3>R$300k - 51m² - até 3° </h3>
+                    <p>
+                        <a class="link-copia" data-apto="apto09" href="#" onclick="abrirPopup(event, this.href)" title="Veja o Imóvel">Link Imagens do Apartamento</a>
+                    </p>
                 </div>
             </section>
             <!-- Texto 02 -->
             <section class="module content unidade">
                 <div class="container pros">
-                    <h2>Prós</h2>
-                    <p>1- O que tem no apto</p>
-                    <p>2-Andar - Térreo com 3 Subsolo</p>
-                    <p>3-Móveis - Planejados Quarto e Cozinha</p>
-                    <p>4-Varanda - Pequena</p>
-                    <p>5-Vista Interrompida</p>
-                    <p>6-Iluminação - Natural</p>
-                    <p>x-Sol da manhã até 13h</p>
-                    <p>7-Localização: Natureza/Bairro</p>
-                    <p>8-Transporte Público: Ônibus/Uber (Não tem metrô e trem caminhando)</p>
-                    <p>8-Marcadinho na rua, demais de Uber/Ônibus</p>
+                    <h2>Prós (👍 Positivo)</h2>
+                    <p>🌞	Iluminação => Sol da manhã até 13h / Pouca luz natural</p>
+                    <p>👀   Vista => Livre / Interrompida</p>
+                    <p>🏢	Andar => Térreo / Último andar, sem elevador</p>
+                    <p>🏡	Varanda => Varanda grande / Sem varanda</p>
+                    <p>🏙️   Característica da Rua => Residencial / Comercial</p>
+                    <p>🚪	Segurança => Porta reforçada" ou "Fechadura simples"</p>
+                    <p>🛋️	 Mobília => Planejados na cozinha e quarto / Sem móveis embutidos</p>
+                    <p>🔇	Isolamento Acústico => Paredes duplas, sem ruído / Barulho dos vizinhos</p>
+                    <p>🚇	Metrô => 100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público => Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🚗   Estacionamento => Difícil parar na rua</p>
+                    <p>💰	Custo-benefício => Ótima relação preço/localização / Alto preço por metro²</p>
                 </div>
                 <div class="container contras">
-                    <h2>Contras</h2>
-                    <p>1- Pequeno</p>
-                    <p>2-</p>
-                    <p>3-</p>
-                    <p>4-</p>
-                    <p>5-</p>
-                    <p>6-</p>
+                    <h2>Contras (👎 Negativo)</h2>
+                    <p>🌞	Iluminação => Sol da manhã até 13h / Pouca luz natural</p>
+                    <p>👀   Vista => Livre / Interrompida</p>
+                    <p>🏢	Andar => Térreo / Último andar, sem elevador</p>
+                    <p>🏡	Varanda => Varanda grande / Sem varanda</p>
+                    <p>🏙️   Característica da Rua => Residencial / Comercial</p>
+                    <p>🚪	Segurança => Porta reforçada" ou "Fechadura simples"</p>
+                    <p>🛋️	 Mobília => Planejados na cozinha e quarto / Sem móveis embutidos</p>
+                    <p>🔇	Isolamento Acústico => Paredes duplas, sem ruído / Barulho dos vizinhos</p>
+                    <p>🚇	Metrô => 100m do metrô / Somente de ônibus</p>
+                    <p>🚌	Transporte Público => Ponto de ônibus na esquina / Apenas Uber/ônibus</p>
+                    <p>🚗   Estacionamento => Difícil parar na rua</p>
+                    <p>💰	Custo-benefício => Ótima relação preço/localização / Alto preço por metro²</p>
                 </div>
             </section>
 <!-- ******************************************************* -->
@@ -797,5 +901,6 @@
     <script src="./menu.js"></script>
     <script src="./calculo-desconto.js"></script>
     <script src="./popup-menor.js"></script>
+    <script src="./link-imagens-sites.js"></script>
 </body>
 </html>
