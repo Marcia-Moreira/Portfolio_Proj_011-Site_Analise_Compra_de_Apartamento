@@ -15,6 +15,14 @@ revelar.reveal('.coluna-2', { duration: 2000, origin: 'bottom', distance: '300px
 
 revelar.reveal('.coluna-3', { duration: 2000, origin: 'bottom', distance: '300px' })
 
+
+revelar.reveal('.card-reveal-right', {duration: 2000, origin: 'right', distance: '300px' });
+
+revelar.reveal('.card-reveal-left', {duration: 2000, origin: 'left', distance: '300px' });
+
+
+
+
 // Classes DELAY:
 revelar.reveal('.delay-100', { delay: 100 });
 
